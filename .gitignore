@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Test output and coverage
+test-results/
+playwright-report/
+blob-report/
+coverage/
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini

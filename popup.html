@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>净映 · ClearPlay</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <header>
+    <span class="logo" aria-hidden="true">净</span>
+    <div><h1>净映</h1><span class="brand">CLEARPLAY</span></div>
+    <span class="version">读取版本中…</span>
+  </header>
+  <main>
+    <p id="version-warning" role="alert"></p>
+    <p class="intro">暂停，让画面留下来。</p>
+    <section class="card">
+      <label class="setting" for="pause-ads">
+        <span><strong>过滤广告</strong><small>腾讯视频 · 爱奇艺网页版</small></span>
+        <input id="pause-ads" type="checkbox" role="switch" disabled>
+      </label>
+      <p id="status" role="status" aria-live="polite">正在读取设置…</p>
+    <button id="authorize" type="button">允许两站自动运行</button><p id="permission-status" aria-live="polite"></p><button id="repair" type="button">连接并修复当前页</button><p id="diagnostic" aria-live="polite"></p></section>
+    <details><summary>分类与漏拦诊断</summary><p id="categories"></p><button id="copy-report" type="button">复制排查报告</button><textarea id="report" aria-label="排查报告，可手动复制" readonly hidden></textarea><p class="scope">报告包含版本、计数及候选元素的标签名和类名，不输出链接地址、页面正文或 Cookie；不会自动发送。分享前请检查内容。计数为已识别容器，不代表全部广告。</p></details>
+    <p class="note">打开、切换或重新访问视频页面时自动运行，无需点击插件。更新后请刷新一次旧页面。</p>
+    <p class="scope">支持腾讯视频、爱奇艺已识别的暂停广告与推荐流广告卡片。</p>
+  </main>
+</body>
+</html>

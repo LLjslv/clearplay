@@ -1,0 +1,24 @@
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] [class*="videoListItem_imageTitleInRow__"]:has(img[data-ai-entity="广告配图"]),
+/* Site-scoped USER-origin styles, verified against the public player templates. */
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] a:is([href*="order_plan_id="][href*="creative_id="][href*="impress_id="], [href^="https://ads.game.iqiyi.com/"], [href^="//ads.game.iqiyi.com/"]):has(> [class*="thumbnail_thumbnailItemWrap__"]),
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] [class*="videoListAdVideo_container__"],
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] [class*="compFuncs_simpleWrap__"] > div:has(> a > [class*="videoListAdVideo_container__"]),
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] [class*="adTonglan_wrap__"],
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] [class*="adTonglan_itemWrap__"],
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] [class*="filmFeed_filmFeed__"]:has([class*="filmFeed_adBadge__"], [class*="filmFeed_gameBtn__"]),
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] [class*="videoListAdPic_container__"],
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] [class*="adTheater_container__"],
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] [class*="compFuncs_simpleWrap__"] > div:has(> a > [class*="videoListAdPic_container__"]),
+html[data-clearplay-site="tencent"][data-clearplay-pause-ads="on"] .video-card-wrap.flow-card--web:has(> .ad-flag[title="关闭广告"]),
+html[data-clearplay-site="tencent"][data-clearplay-pause-ads="on"] [data-role="creative-player-pause-container"],
+html[data-clearplay-site="tencent"][data-clearplay-pause-ads="on"] .txp_ad[data-role="txpad-interact-pause"],
+html[data-clearplay-site="tencent"][data-clearplay-pause-ads="on"] .split-screen-pause,
+html[data-clearplay-site="tencent"][data-clearplay-pause-ads="on"] .txp_full_screen_pause,
+html[data-clearplay-site="tencent"][data-clearplay-pause-ads="on"] .txp_full_screen_pause-active,
+html[data-clearplay-site="tencent"][data-clearplay-pause-ads="on"] .txp_full_screen_pause-bg,
+html[data-clearplay-site="tencent"][data-clearplay-pause-ads="on"] .txp_full_screen_pause-bg-v2,
+html[data-clearplay-site="tencent"][data-clearplay-pause-ads="on"] .wide-screen-pause,
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] .iqp-player .common-pause.ad-clickable,
+html[data-clearplay-site="iqiyi"][data-clearplay-pause-ads="on"] .iqp-player .flash-max1 {
+  display: none !important;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "clearplay",
+  "version": "0.17.0",
+  "private": true,
+  "license": "MIT",
+  "description": "净映：腾讯视频与爱奇艺推荐流广告及暂停广告过滤扩展",
+  "scripts": {
+    "test": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "净映（ClearPlay）",
+  "version": "0.17.0",
+  "description": "过滤腾讯视频、爱奇艺推荐流广告卡片和暂停广告，保留正常视频与播放控件。",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "净映 · 广告过滤",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://v.qq.com/*",
+        "https://www.iqiyi.com/*",
+        "https://iqiyi.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "css": [
+        "content.css"
+      ]
+    }
+  ],
+  "minimum_chrome_version": "111",
+  "host_permissions": [
+    "https://v.qq.com/*",
+    "https://www.iqiyi.com/*",
+    "https://iqiyi.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
